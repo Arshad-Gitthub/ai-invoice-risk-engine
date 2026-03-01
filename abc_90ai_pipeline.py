@@ -54,7 +54,8 @@ def header(title):
 # ═══════════════════════════════════════════════════════════════
 # STEP 1: GENERATE TRAINING DATA
 # ═══════════════════════════════════════════════════════════════
-header("ABC COMPANY — 90% AI Invoice Processing System")
+def main():
+ header("ABC COMPANY — 90% AI Invoice Processing System")
 print("\n📂 Generating ABC Company invoice history (500 invoices)...")
 df = generate_dataset(n=500)
 print(f"   Total: {len(df)} | Normal: {(df.is_anomaly==0).sum()} | Anomalies: {(df.is_anomaly==1).sum()}")
@@ -249,4 +250,7 @@ print(f"  🚫 Duplicate rejected:       {dup}")
 print(f"\n  💰 AED protected: {protected:,.2f}")
 print(f"\n  📊 Model drift:  PSI={drift['psi']:.4f} — {drift['status']}")
 print(f"  🤖 AI Coverage: ~90% automated | ~10% human review queue")
-print(f"\n{'═'*68}\n  Pipeline complete — 9 AI layers executed\n{'═'*68}\n")
+    print(f"\n{'═'*68}\n  Pipeline complete — 9 AI layers executed\n{'═'*68}\n")
+    return results
+if __name__ == "__main__":
+    main()
