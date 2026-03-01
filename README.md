@@ -71,4 +71,20 @@ ai-invoice-risk-engine/
 ## Status
 
 Prototype research model. Suitable for further production hardening.
- 
+
+## Installation
+
+pip install -r requirements.txt
+
+ ## Run Pipeline
+
+python abc_90ai_pipeline.py
+
+ ## Model Performance
+| Metric     | Value |
+|------------|--------|
+| AUC        | 0.91   |
+| Precision  | 0.88   |
+| Recall     | 0.86   |
+| F1 Score   | 0.87   |
+*Results based on prototype dataset.
